@@ -1,0 +1,30 @@
+{
+  "name": "mixin-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuzemei/mixin-logger.git"
+  },
+  "keywords": [],
+  "author": "Neo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuzemei/mixin-logger/issues"
+  },
+  "homepage": "https://github.com/liuzemei/mixin-logger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mixin-node-sdk": "^3.0.13"
+  },
+  "pkg": {
+    "scripts": "node index.js",
+    "targets": [
+      "node14-linux-arm64"
+    ]
+  }
+}
