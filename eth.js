@@ -11,10 +11,7 @@ async function main() {
   if (gas < 50) {
     times++
     if (times > 120) {
-      await axios.post(message_api, {
-        to: user_id,
-        text: "Gas price is too low: " + gas
-      })
+      await sendMsg("Gas price is too low: " + gas)
       times = 0
     }
   } else {
@@ -24,5 +21,9 @@ async function main() {
     main()
   }, 1000)
 }
+function sendMsg(text) {
+  return axios.post(message_api, { text, to: user_id })
+}
 
+sendMsg("Eth gas monitor is start...")
 main()
